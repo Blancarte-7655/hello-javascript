@@ -116,3 +116,6 @@ console.log(!(5 > 10 || 15 > 20))
 
 const isRaining = false
 isRaining ? console.log("Está lloviendo") : console.log("No está lloviendo")
+
+// "?" es el operador ternario, que es una forma abreviada de escribir una declaración if-else. La sintaxis es: condición ? expresión_si_verdadero : expresión_si_falso. En este caso, si isRaining es true, se ejecutará console.log("Está lloviendo"), de lo contrario se ejecutará console.log("No está lloviendo").
+

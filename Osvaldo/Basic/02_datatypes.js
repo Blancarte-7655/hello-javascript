@@ -34,7 +34,7 @@ console.log(mySymbol)
 let myBigInt = BigInt(817239871289371986589716389471628379612983761289376129)
 let myBigInt2 = 817239871289371986589716389471628379612983761289376129n
 
-// Mostramos los tipos de datos
+// Mostramos los tipos de datos, utilizando el operador typeof para verificar el tipo de cada variable
 console.log(typeof myName)
 console.log(typeof alias)
 console.log(typeof email)
@@ -43,7 +43,8 @@ console.log(typeof height)
 console.log(typeof isTeacher)
 console.log(typeof isStudent)
 console.log(typeof undefinedValue)
-console.log(typeof nullValue)
+console.log(typeof nullValue)     // typeof null devuelve "object" debido a un error histórico en JavaScript, pero null es un tipo de dato primitivo que representa la ausencia de valor.
 console.log(typeof mySymbol)
 console.log(typeof myBigInt)
 console.log(typeof myBigInt2)
+
