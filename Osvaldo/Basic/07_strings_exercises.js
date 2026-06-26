@@ -26,7 +26,7 @@ let live2 = `y ocupo
 20k`
 
 // 6. Interpola el valor de una variable en un string
-console.log(`Hola, soy ${titulo} y ocupo 20k`)
+console.log(`Hola, soy ${titulo} y ocupo 38k`)
 
 // 7. Reemplaza todos los espacios en blanco de un string por guiones
 console.log(live.replaceAll(" ", "-"))

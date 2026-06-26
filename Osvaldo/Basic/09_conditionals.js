@@ -151,12 +151,12 @@ console.log(estacion)
 
 // 10. Usa un switch o if si se hizo con uno o otro para hacer de nuevo el ejercicio 7
 
-let mes4 = 3
+let mes4 = 6
 let dias2
 
-if (mes4 == 1 || 3 || 5 || 7 || 8 || 10 || 12) {
+if (mes4 === 1 || mes4 === 3 || mes4 === 5 || mes4 === 7 || mes4 === 8 || mes4 === 10 || mes4 === 12) {
     dias2 = 31
-} else if (mes4 == 4 || 6 || 9 || 11) {
+} else if (mes4 === 4 || mes4 === 6 || mes4 === 9 || mes4 === 11) {
     dias2 = 30
 } else if (mes4 === 2) {
     dias2 = 28
