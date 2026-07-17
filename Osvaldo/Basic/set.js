@@ -30,7 +30,7 @@ console.log(myset.size)
 
 
 myset.add('drum5677b@gmail.com')
-myset.add('drum5677b@gmail.com')
+myset.add('dmrum5677b@gmail.com')
 myset.add('Drum5677b@gmail.com')
 
 console.log(myset)

@@ -41,7 +41,3 @@ console.log(mymap)
 mymap.clear()
 
 console.log(mymap)
-
-mymap.size()
-
-console.log(mymap)
