@@ -36,15 +36,87 @@ console.log('\n')
 console.log("-".repeat(80))
 console.log('4. Dado un array de nombres, usa un bucle para imprimir cada nombre en la consola')
 
-let nombres = [Manuel Osvaldo Montes Blancarte, Marisol Huert Catarino]
+let nombres = ['Manuel Osvaldo Montes Blancarte', 'Marisol Huert Catarino']
+
+for (let i = 0; i < nombres.length; i++) {
+    console.log(nombres[i])
+}
 // 5. Escribe un bucle que cuente el número de vocales en una cadena de texto
+console.log('-'.repeat(80))
+console.log('5. Escribe un bucle que cuente el número de vocales en una cadena de texto')
+
+let vocales = 'aeiouAEIOU'
+let texto = 'Manuel Osvaldo Montes Blancarte. \n Marisol Huerta Catarino.'
+let contando = 0
+
+for (let i = 0; i < texto.length; i++) {
+    if (vocales.includes(texto[i])) {
+        contando++;
+    }
+}
+console.log('el numero de vocales son:', contando)
+console.log(''.repeat(80))
 
 // 6. Dado un array de números, usa un bucle para multiplicar todos los números y mostrar el producto
+console.log('-'.repeat(80))
+console.log('6. Dado un array de números, usa un bucle para multiplicar todos los números y mostrar el producto')
 
+let numeros = [2, 3, 4, 5]
+let multiplicacion = 5
+
+for (let i = 0; i < numeros.length; i++) {
+    resultado = numeros[i] * multiplicacion
+    console.log(resultado)
+}
+
+console.log(''.repeat(80))
 // 7. Escribe un bucle que imprima la tabla de multiplicar del 5
+console.log('-'.repeat(80))
+console.log('7. Escribe un bucle que imprima la tabla de multiplicar del 5')
 
+for (let i = 1; i <= 10; i++) {
+    console.log(`5 x ${i} = ${5 * i}`);
+}
+
+console.log(''.repeat(80))
 // 8. Usa un bucle para invertir una cadena de texto
+console.log(''.repeat(80))
+console.log('8. Usa un bucle para invertir una cadena de texto')
 
+
+let str = "Hola Mundo";
+let reversed = '';
+for (let i = str.length - 1; i >= 0; i--) {
+    reversed += str[i];
+}
+console.log(reversed);
+
+console.log(''.repeat(80))
 // 9. Usa un bucle para generar los primeros 10 números de la secuencia de Fibonacci
+console.log('-'.repeat(80))
+console.log('9. Usa un bucle para generar los primeros 10 números de la secuencia de Fibonacci')
 
+let a = 0, b = 1, temp;
+
+for (let i = 0; i < 10; i++) {
+    console.log(a)
+    temp = a + b
+    a = b;
+    b = temp;
+}
+
+console.log('-'.repeat(80))
 // 10. Dado un array de números, usa un bucle para crear un nuevo array que contenga solo los números mayores a 10
+console.log('-'.repeat(80))
+console.log('10. Dado un array de números, usa un bucle para crear un nuevo array que contenga solo los números mayores a 10')
+
+let originalArray = [5, 12, 8, 130, 44];
+let newArray = [];
+
+for (let i = 0; i < originalArray.length; i++) {
+    if (originalArray[i] > 10) {
+        newArray.push(originalArray[i]);
+    }
+}
+
+console.log(newArray);

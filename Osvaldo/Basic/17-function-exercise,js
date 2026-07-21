@@ -1,0 +1,157 @@
+// 1. Crea una función que reciba dos números y devuelva su suma
+
+function sum(a, b) {
+    return a + b
+}
+
+let resultado = sum(5, 7)
+console.log(resultado)
+
+
+// 2. Crea una función que reciba un array de números y devuelva el mayor de ellos
+
+function NumeroMayor(numeros) {
+    let mayor = numeros[0];
+
+    for (let i = 1; i < numeros.length; i++) {
+        if (numeros[i] > mayor) {
+            mayor = numeros[i];
+        }
+    }
+
+    return mayor;
+}
+
+console.log(NumeroMayor([1, 2, 15, 10, 20]))
+
+// 3. Crea una función que reciba un string y devuelva el número de vocales que contiene
+
+function contarVocales(texto) {
+    let vocales = 'aeiouAEIOU';
+    let contando = 0
+    for (let i = 0; i < texto.length; i++) {
+        if (vocales.includes(texto[i])) {
+            contando++;
+        }
+    }
+    return contando;
+}
+console.log(contarVocales("fdsahfjdkhefuafb"));
+
+// 4. Crea una función que reciba un array de strings y devuelva un nuevo array con las strings en mayúsculas
+
+function transformarMayusculas(arrayletras) {
+    return arrayletras.map(texto => texto.toUpperCase());
+}
+
+const nochedejs = ['cecer', 'ramito', 'ovaldo'];
+const jsEnMayuscula = transformarMayusculas(nochedejs);
+
+console.log(jsEnMayuscula);
+
+
+// 5. Crea una función que reciba un número y devuelva true si es primo, y false en caso contrario
+
+function elPrimo(numero) {
+    if (numero <= 1) {
+        return false;
+    }
+
+    for (let i = 2; i < numero; i++) {
+        if (numero % i === 0) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+console.log(elPrimo(7));
+console.log(elPrimo(4));
+console.log(elPrimo(1));
+
+// 6. Crea una función que reciba dos arrays y devuelva un nuevo array que contenga los elementos comunes entre ambos
+
+function elementosComunes(array1, array2) {
+    return array1.filter(numerobusqueda => array2.includes(numerobusqueda));
+}
+
+const lista1 = [1, 2, 3];
+const lista2 = [3, 4, 5];
+
+console.log(elementosComunes(lista1, lista2));
+
+// 7. Crea una función que reciba un array de números y devuelva la suma de todos los números pares
+
+function sumaPares(array2) {
+    let suma = 0;
+
+    array2.forEach(numero => { if (numero % 2 == 0) { suma += numero; } });
+    return suma;
+}
+
+console.log(sumaPares([1, 2, 3, 4, 5, 6]))
+
+// 8. Crea una función que reciba un array de números y devuelva un nuevo array con cada número elevado al cuadrado
+
+function Cuadrado(array3) {
+    let newarray3 = [];
+
+    array3.forEach(siete => { let resultado = siete * siete; newarray3.push(resultado) });
+
+    return newarray3;
+}
+
+console.log(Cuadrado([1, 2, 3]));
+
+
+// 9. Crea una función que reciba una cadena de texto y devuelva la misma cadena con las palabras en orden inverso
+
+const hola = (nombre) => { return nombre.split("").reverse().join("") };
+console.log(hola("Hola"));
+
+
+// 10. Crea una función que calcule el factorial de un número dado
+
+function calcularFactorial(numero) {
+    if (numero == 0 || numero == 1) {
+        return 1;
+    }
+
+    let resultado = 1;
+
+    for (let i = 2; i <= numero; i++) {
+        resultado *= i;
+    }
+    return resultado;
+}
+
+console.log(calcularFactorial(5));
+
+
+function ninja(texto) {
+    let vocales = 'aeiouAEIOU';
+
+    // 1. .split('') rompe el texto en un array de letras individuales.
+    // 2. .filter() se queda solo con las letras que cumplen la condición (si es vocal).
+    // 3. .length nos da el total de elementos que sobrevivieron al filtro.
+    return texto.split('').filter(letra => vocales.includes(letra)).length;
+}
+
+console.log(ninja("fdsahfjdkhefuafb"));
+
+
+
+let mystring = "aeiou";
+
+function Vocales(mystring) {
+    let count = 0;
+
+    for (let i = 0; i < mystring.length; i++) {
+        count++;
+        console.log(`${count} vocal: ${mystring[i]}`);
+    }
+    return count;
+}
+
+Vocales('Marisol');
